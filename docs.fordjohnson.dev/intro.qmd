@@ -3,3 +3,36 @@
 This is a book created from markdown and executable code.
 
 See @knuth84 for additional discussion of literate programming.
+
+## p2
+
+> "The simple graph has brought more information to the data analyst's mind than any other device." --- John Tukey
+
+{{< placeholder >}}
+
+{{< lipsum 1 >}}
+
+## p3
+
+just testing how the TOC works
+
+{{< lipsum 2 >}}
+
+### this is quarto
+
+{{< lipsum 1 >}}
+
+{{< placeholder >}}
+
+
+### why quarto?
+
+{{< lipsum 1 >}}
+
+#### why not?
+
+{{< placeholder >}}
+
+## next topic
+
+{{< lipsum 2 >}}

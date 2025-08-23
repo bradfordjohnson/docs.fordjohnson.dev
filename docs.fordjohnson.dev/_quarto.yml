@@ -4,14 +4,33 @@ project:
 
 book:
   title: "docs.fordjohnson.dev"
+  site-url: docs.fordjohnson.dev
+  date: last-modified
+
+  page-footer:
+    left: |
+      Ford Johnson
+    right: |
+      Built with ❤️ and <a href="https://quarto.org/">Quarto</a>.
+
+  # cover-image: cover.jpg
+  # favicon: cover.jpg
+
+  repo-url: https://github.com/bradfordjohnson/docs.fordjohnson.dev/
+  repo-branch: main
+  repo-actions: [edit, issue]
+
   author: "Ford Johnson"
-  date: "8/23/2025"
+
   chapters:
     - index.qmd
-    - intro.qmd
+    - part: "Test"
+      chapters: 
+        - intro.qmd
 
 format:
   html:
     theme:
       - cosmo
       - brand
+    canonical-url: true
