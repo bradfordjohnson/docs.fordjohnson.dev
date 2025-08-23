@@ -1,9 +1,9 @@
-name: Render and deploy Quarto site via GitHub Pages
+name: Quarto CI/CD Deployment
 
 on:
   push:
     branches:
-      - master
+      - master    # or main, depending on your default branch
     paths:
       - "docs.fordjohnson.dev/**"
   workflow_dispatch:
@@ -30,17 +30,14 @@ jobs:
 
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
+        # version is optional — omit for latest release
+        # with:
+        #   version: "1.4.515"
+
+      - name: Render Quarto Project
+        uses: quarto-dev/quarto-actions/render@v2
         with:
-          version: latest
-
-      # Optional: install R / Python if you use them
-      # - uses: r-lib/actions/setup-r@v2
-      # - uses: actions/setup-python@v5
-      #   with:
-      #     python-version: "3.11"
-
-      - name: Render Quarto site
-        run: quarto render docs.fordjohnson.dev
+          path: docs.fordjohnson.dev  # path to your Quarto project folder
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
@@ -48,7 +45,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "docs.fordjohnson.dev/_site"
+          path: docs.fordjohnson.dev/_site
 
       - name: Deploy to GitHub Pages
         id: deployment
