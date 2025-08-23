@@ -1,4 +1,4 @@
-name: Deploy Quarto site via GitHub Pages
+name: Render and deploy Quarto site via GitHub Pages
 
 on:
   push:
