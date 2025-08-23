@@ -1,0 +1,17 @@
+project:
+  type: book
+  output-dir: _site
+
+book:
+  title: "docs.fordjohnson.dev"
+  author: "Ford Johnson"
+  date: "8/23/2025"
+  chapters:
+    - index.qmd
+    - intro.qmd
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
