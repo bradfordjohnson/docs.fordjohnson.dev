@@ -30,14 +30,11 @@ jobs:
 
       - name: Setup Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-        # version is optional — omit for latest release
-        # with:
-        #   version: "1.4.515"
 
       - name: Render Quarto Project
         uses: quarto-dev/quarto-actions/render@v2
         with:
-          path: docs.fordjohnson.dev  # path to your Quarto project folder
+          path: docs.fordjohnson.dev
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

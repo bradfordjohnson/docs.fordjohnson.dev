@@ -1,20 +1,31 @@
 project:
   type: book
   output-dir: _site
+  preview:
+    port: 4000
+    timeout: 1200
 
 book:
   title: "docs.fordjohnson.dev"
   site-url: docs.fordjohnson.dev
+  favicon: images/favicon.png
+  # cover-image: images/logo.png
+  image: images/logo.png
   date: last-modified
+
+  sidebar:
+    style: docked
+    logo: images/logo.png
+    tools:
+      - icon: house
+        href: https://fordjohnson.dev
+        text: Portfolio
 
   page-footer:
     left: |
       Ford Johnson
     right: |
       Built with ❤️ and <a href="https://quarto.org/">Quarto</a>.
-
-  # cover-image: cover.jpg
-  # favicon: cover.jpg
 
   repo-url: https://github.com/bradfordjohnson/docs.fordjohnson.dev/
   repo-branch: main
@@ -24,13 +35,26 @@ book:
 
   chapters:
     - index.qmd
-    - part: "Test"
-      chapters: 
-        - intro.qmd
+    - analysis_methods/index.qmd
+    - part: deep_dives/index.qmd
+      chapters:
+        - deep_dives/rocket_league/index.qmd
+        - deep_dives/core_pretzel_index/index.qmd
 
 format:
   html:
+    canonical-url: true
+
+    page-layout: full
+    css: styles.css
     theme:
       - cosmo
       - brand
-    canonical-url: true
+
+    include-in-header:
+      - ga4/gtm_header.html
+      - ga4/gtm_click_listener.html
+    include-before-body: ga4/gtm_body.html
+
+    grid:
+      sidebar-width: 350px
