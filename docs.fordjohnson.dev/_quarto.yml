@@ -7,7 +7,7 @@ project:
 
 book:
   title: "docs.fordjohnson.dev"
-  site-url: docs.fordjohnson.dev
+  site-url: https://docs.fordjohnson.dev
   favicon: images/favicon.png
   # cover-image: images/logo.png
   image: images/logo.png
