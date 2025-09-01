@@ -109,12 +109,13 @@ Data is currently logged manually in spreadsheets, but the ultimate goal is to d
 |------------|--------------|--------------|------------|----------------|
 | Holy City  | Salt         | 1            | $6.50      | 79.00%         |
 | Holy City  | Salt         | 2            | $6.50      | 81.50%         |
+| Holy City  | Salt         | 3            | $6.50      | 83.50%         |
 
 : Current Observations {.striped}
 
 | Restaurant | Pretzel Type | # of Rankings | Adjusted CPI Score |
 |------------|--------------|---------------|--------------------|
-| Holy City  | Salt         | 2             | 80.56%             |
+| Holy City  | Salt         | 3             | 82.35%             |
 
 : Adjusted CPI Score {.striped}
 
