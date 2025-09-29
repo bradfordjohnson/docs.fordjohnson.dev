@@ -8,14 +8,14 @@ project:
 book:
   title: "docs.fordjohnson.dev"
   site-url: https://docs.fordjohnson.dev
-  favicon: images/favicon.png
+  favicon: _components/favicon.png
   # cover-image: images/logo.png
-  image: images/logo.png
+  image: https://cdn.jsdelivr.net/gh/bradfordjohnson/global-assets@master/images/logo/logo.png
   date: last-modified
 
   sidebar:
     style: docked
-    logo: images/logo.png
+    logo: https://cdn.jsdelivr.net/gh/bradfordjohnson/global-assets@master/images/logo/logo.png
     tools:
       - icon: house
         href: https://fordjohnson.dev
@@ -51,9 +51,7 @@ format:
       - cosmo
       - brand
 
-    include-in-header:
-      - ga4/gtm_header.html
-      - ga4/gtm_click_listener.html
+    include-in-header: ga4/gtm_header.html
     include-before-body: ga4/gtm_body.html
 
     grid:
